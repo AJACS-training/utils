@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# images2md.sh ver. 0.1 by inutano
+# images2md.sh ver. 0.2 by inutano
 #   convert images exported from keynote slides to markdown
 #
 # usage
