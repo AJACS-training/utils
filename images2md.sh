@@ -12,7 +12,7 @@ target_dir=${1}
 dirname=`echo ${target_dir} | awk -F '/' '{ print $NF }'`
 
 # make new directory and copy images to be uploaded to github
-markdown_dir="./${dirname}-markdown"
+markdown_dir="./markdown-${dirname}"
 image_dir="${markdown_dir}/images"
 mkdir -p ${image_dir}
 cp ${target_dir}/* ${image_dir}
