@@ -15,7 +15,7 @@ dirname=`echo ${target_dir} | awk -F '/' '{ print $NF }'`
 markdown_dir="./markdown-${dirname}"
 image_dir="${markdown_dir}/images"
 mkdir -p ${image_dir}
-cp ${target_dir}/* ${image_dir}
+mv ${target_dir}/* ${image_dir}
 
 # create simple markdown file employ images named readme.md
 cd ${markdown_dir}
